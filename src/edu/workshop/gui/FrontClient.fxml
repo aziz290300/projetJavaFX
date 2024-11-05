@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.workshop.gui.FrontClientController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="140.0" layoutY="35.0" style="-fx-alignment: center;" text="Bienvenue à nos services" textAlignment="RIGHT" textFill="#0077b6">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.4" />
+         </effect>
+      </Label>
+      <Hyperlink layoutX="26.0" layoutY="14.0" onAction="#retour" prefHeight="62.0" prefWidth="77.0" text="←" textFill="#262525">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="33.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

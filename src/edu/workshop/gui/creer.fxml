@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.workshop.gui.CreerController">
+   <children>
+      <Label layoutX="200.0" layoutY="59.0" text="Créer un compte " textFill="#634646">
+         <font>
+            <Font name="Snap ITC" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="151.0" text="Nom" textFill="#634646" />
+      <TextField fx:id="nom" layoutX="85.0" layoutY="146.0" promptText="votre nom" style="-fx-background-color: transparent; -fx-text-inner-color: black; -fx-border-color: #0077b6; -fx-border-width: 0 0 2 0;" />
+      <Label layoutX="34.0" layoutY="200.0" text="Prenom" textFill="#634646" />
+      <TextField fx:id="prenom" layoutX="85.0" layoutY="195.0" promptText="votre Prenom" style="-fx-background-color: transparent; -fx-text-inner-color: black; -fx-border-color: #0077b6; -fx-border-width: 0 0 2 0;" />
+      <Label layoutX="40.0" layoutY="260.0" prefHeight="0.0" prefWidth="29.0" text="Email" textFill="#634646" />
+      <TextField fx:id="email" layoutX="85.0" layoutY="255.0" promptText="votre Email" style="-fx-background-color: transparent; -fx-text-inner-color: black; -fx-border-color: #0077b6; -fx-border-width: 0 0 2 0;" />
+      <Label layoutX="333.0" layoutY="160.0" text="Numtel" textFill="#634646" />
+      <TextField fx:id="numtel" layoutX="388.0" layoutY="146.0" promptText="+216" style="-fx-background-color: transparent; -fx-text-inner-color: black; -fx-border-color: #0077b6; -fx-border-width: 0 0 2 0;" />
+      <Button layoutX="238.0" layoutY="331.0" mnemonicParsing="false" onAction="#creer" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: orange;" styleClass="create-btn" text="create">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="341.0" layoutY="274.0" text="type" textFill="#634646" />
+      <Label layoutX="341.0" layoutY="209.0" text="Pwd" textFill="#634646" />
+      <ChoiceBox fx:id="typeUser" layoutX="387.0" layoutY="265.0" prefWidth="150.0" />
+      <PasswordField fx:id="pwd" layoutX="388.0" layoutY="195.0" style="-fx-background-color: transparent; -fx-text-inner-color: black; -fx-border-color: #0077b6; -fx-border-width: 0 0 2 0;" />
+      <Hyperlink layoutX="17.0" layoutY="14.0" onAction="#retour" text="←">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="35.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
